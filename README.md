@@ -1,6 +1,6 @@
 # React Playground
 
-This is my playground for learning React!. 
+This is my playground for learning React!
 
 I'll be throwing code snippets in here and tinkering with all sorts of concepts as I go.
 
