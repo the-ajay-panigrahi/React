@@ -46,5 +46,5 @@ const reactElement3 = {
 const mainContainer = document.getElementById("root");
 
 customRender(reactElement2, mainContainer);
-customRender(reactElement1, mainContainer);
 customRender(reactElement3, mainContainer);
+customRender(reactElement1, mainContainer);
