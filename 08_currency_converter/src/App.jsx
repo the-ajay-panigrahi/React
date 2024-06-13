@@ -1,7 +1,14 @@
+import backgroundImage from "./assets/currency-background.jpg";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
+        className="w-screen h-screen bg-cover	bg-no-repeat bg-center"
+      ></div>
     </>
   );
 }
