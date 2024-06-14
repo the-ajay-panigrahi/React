@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useId } from "react";
 
 function InputBox({
   amount,
@@ -9,13 +9,18 @@ function InputBox({
   onCurrencyChange,
   amountdisabled,
 }) {
+  const amountInputId = useId();
   return (
     <div className="w-full h-full bg-white flex justify-between items-center p-6 rounded-xl flex-wrap">
       <div className="flex justify-between items-start flex-col h-16 flex-wrap">
-        <div className="text-slate-500 font-semibold text-lg">
+        <label
+          htmlFor={amountInputId}
+          className="text-slate-500 font-semibold text-lg"
+        >
           {conversionSide}
-        </div>
+        </label>
         <input
+          id={amountInputId}
           type="number"
           placeholder="Type the amount..."
           value={amount}
