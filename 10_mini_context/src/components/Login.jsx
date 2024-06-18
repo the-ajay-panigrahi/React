@@ -9,7 +9,7 @@ function Login() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    setUser(userName, password);
+    setUser({ userName, password });
   }
 
   return (
@@ -23,6 +23,8 @@ function Login() {
         placeholder="User Name"
       />
 
+      <br />
+
       <input
         type="password"
         value={password}
@@ -30,7 +32,13 @@ function Login() {
         placeholder="Password"
       />
 
+      <br />
+      <br />
+
       <button onClick={handleSubmit}>Submit</button>
+
+      <br />
+      <br />
     </div>
   );
 }
