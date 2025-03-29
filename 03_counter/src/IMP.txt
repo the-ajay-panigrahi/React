@@ -1,6 +1,0 @@
-React Important Interview Concepts:-
-
-1) React Fiber
-2) Virtual Dom
-3) Reconciliation
-4) Hydration(May be)
